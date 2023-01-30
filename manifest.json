@@ -1,0 +1,28 @@
+{
+    "name" : "The Good Quote",
+    "version" : "1.0.0",
+    "description" : "whatever it does",
+    "manifest_version" : 3,
+    "author" : {
+        "author 1": "Alice Darondeau",
+        "author 2": "Manon Mucchielli",
+        "author 3": "Juliette de Quatrebarbes"
+    },
+    "host_permissions": ["<all_urls>"],
+    "permissions": ["scripting","tabs","storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action" : {
+        "default_popup" : "index.html", 
+        "default_title" : "Quotes!",
+        "default_icon": {
+            "128": "icons/lama.png"
+        }
+    },
+    "icons": {
+        "16": "icons/lama.png",
+        "32": "icons/lama.png",
+        "48": "icons/lama.png"
+    }
+}
